@@ -5,4 +5,4 @@ HTML
 CSS
 
 
-Web sitemin linki:
+Web sitemin linki:http://samedulusoy.github.io/VizeEmrahhocas-nav/
