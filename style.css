@@ -1,0 +1,106 @@
+/* Resets (Yeniden ayarlanan css kodları) */
+* {
+  margin: 0; /*Tüm ögelerin dış bıoşluğunun sıfırlar*/
+  padding: 0; /*Tüm öögelerin iç boşluğunu sıfırlar*/
+}
+
+body {
+  color: #e5e9c5; /*Web Sitesinin Genel Yazı Rengi*/
+  background-color: #e5e9c5; /*Genel arka plan rengi*/
+}
+
+ul {
+  list-style-type: none; /*Listeleme stil tipini kaldırma*/
+}
+
+a {
+  text-decoration: none; /*Linklerin altındaki çizgiyi kaldırır*/
+}
+
+/* Header */
+header {
+  background-color: #016b61; /*Arkaplan rengi*/
+  text-align: center; /*Metin Hizalama (Sağa, Sola, Ortaya, İki Yana Yasla)*/
+  height: 300px; /*Yükseklik*/
+  display: flex; /*Esnek kutu modeli içerikleri ortalar*/
+  justify-content: center; /*Yatayda ortalama*/
+  align-items: center; /*Dikeyde ortalama*/
+}
+
+header h1 {
+  font-family: inherit, Helvetica, sans-serif; /*Başlıkdaki yazı stilini ayarlar*/
+  margin-bottom: 20px; /*yazı yüksekliği*/
+}
+
+/* Nav */
+nav ul {
+  background-color: #70b2b2;
+  display: flex; /*Flexbox ile öğeleri yan yana getirme*/
+  justify-content: center; /*Yatayda hizalama sağlar*/
+}
+
+nav ul li a {
+  display: block; /*Tıklanılabilir alanı genişletir*/
+  padding: 20px; /*Menü ögelerinin iç boşluğu*/
+  color: #e5e9c5;
+}
+
+.yazılım {
+  height: 500px; /*Resim yüksekliği*/
+  width: 100%; /*Resmin sayfayı kaplaması*/
+}
+
+/* Kutu alanı */
+.tanıtım {
+  display: flex; /*İçerikleri düzenlemek için kullanılır*/
+  flex-direction: column; /* İçerikleri alt alta diz */
+  justify-content: center; /*İçerikleri dikeyde ortalar*/
+  align-items: center; /*Yatayda ortalar*/
+  text-align: center; /*İç metinleri ortalar*/
+  background-color: #016b61;
+  color: #e5e9c5;
+  width: 80%; /*Kutu genişliği*/
+  max-width: 1000px; /*Kutu pixel sayısı*/
+  margin: 50px auto; /*Üst alt boşluk ortalama*/
+  padding: 40px; /*İç boşluk*/
+  border-radius: 15px; /*Köşeleri yuvarlaklaştırır*/
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /*yumuşak gölge*/
+}
+
+/* Yazı kısmı */
+.icerik h1 {
+  margin-bottom: 15px; /*Başlık ile sonraki yazı arasında boşluk*/
+  font-size: 1.8rem; /*Başlık boyutu*/
+}
+
+.icerik p {
+  max-width: 800px; /*Paragraf büyüklüğü*/
+  line-height: 1.6; /*Satırlar arası boşluk*/
+  font-size: 1rem; /*Yazı boyutu*/
+}
+
+footer {
+  display: flex; /* Yan yana dizer */
+  justify-content: center; /* Ortaya hizalar */
+  align-items: center; /* Dikeyde ortalar */
+  gap: 30px; /* Aralarına boşluk ekler */
+  flex-wrap: wrap; /* Küçük ekranda alta geçmelerini sağlar */
+  padding: 40px; /*İç boşluk*/
+  background-color: #919393;
+  color: black;
+  text-align: center; /*Metinler ortalanır*/
+}
+
+footer p {
+  margin: 0; /* Fazla boşlukları kaldırır */
+  font-size: 16px; /*Yazı boyutu*/
+}
+
+footer a {
+  color: black; /* Link rengini siyah yapar */
+  text-decoration: none; /* Alt çizgiyi kaldırır */
+}
+
+footer a:hover {
+  text-decoration: underline; /* Üzerine gelince altını çizer */
+}
